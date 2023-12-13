@@ -1,3 +1,4 @@
+=begin
 def hello
     puts "I am there"
     yield
@@ -13,3 +14,8 @@ def test
     yield 100
 end
 test {|i| puts "the line of code is#{i}"}
+=end
+def test(&dive)
+    dive.call
+ end
+ test { puts "Hello World!"}
