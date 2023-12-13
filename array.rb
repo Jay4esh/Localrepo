@@ -3,3 +3,4 @@ puts clothes.sort()
 puts clothes.length()
 clothes[3] = "Coat"
 puts clothes[3]
+puts clothes.reverse()
