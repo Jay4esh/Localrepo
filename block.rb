@@ -12,10 +12,35 @@ def test
     yield 5
     puts "not mine"
     yield 100
-end
+
 test {|i| puts "the line of code is#{i}"}
-=end
+end
 def test(&dive)
     dive.call
  end
  test { puts "Hello World!"}
+=end
+=begin
+students = ["jay","vraj","himmat"]
+
+students.each_with_index do |students,i|
+     puts students
+     puts i
+end
+=end
+students = ["jay","vraj","himmat"]
+students.each do |students,i|
+     puts students
+     puts students.length
+end
+
+
+
+
+
+
+
+ 
+ 
+
+
