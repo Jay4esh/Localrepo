@@ -43,8 +43,9 @@ puts arr
 
 # Ruby program to convert an array into a string and join elements with a specified character
 birds = [1, 10,20,30]
-str = birds.join( '**').to_s
-puts str.to_s
+str = birds.join('**')
+str = birds.to_s
+puts str, birds.to_s
 
 # Ruby program to add multiple elements to the end of the array using push() methodputs "
 

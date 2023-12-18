@@ -23,3 +23,9 @@ x=box.getheight()
 y=box.getWidth()
     puts "height of box is: #{x}"
     puts "width of box is: #{y}"
+
+    puts "\n..........methods program........"
+
+    require_relative "methods.rb"
+include Panga
+Panga.sayhii("Jay")
