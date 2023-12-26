@@ -10,9 +10,11 @@ module Calculation
     end
     def div(x,y)
         if y != 0
-            x / y
+          x / y
+            puts 'divisible'
+
         else 
-            "not divisible"
+            puts "not divisible"
         end
     end
 end
@@ -24,22 +26,29 @@ def calculate
     puts "3. mul"
     puts "4. div"
 
-    puts "enter choice: ('@', '#', '!', '*')"
+    puts "enter choice: ('+', '-', '*', '/')"
     choice = gets.chomp()
+    
+
     puts "enter number"
     num1 = gets.chomp().to_f
     puts "enter number"
     num2 = gets.chomp().to_f
 
     case 
-    when choice == '@'
+    when choice == '+'
+        add(num1,num2)
         puts (num1 + num2)
-    when choice == '#'
+      
+    when choice == '-'
+        sub(num1,num2)
         puts (num1 - num2)
-    when choice == '!'
-        puts (num1 / num2)
+
     when choice == '*'
+        mul(num1,num2)
         puts (num1 * num2)
+    when choice == '/'
+        div(num1,num2)
     else
         puts "invalid choice"
         return
@@ -47,4 +56,5 @@ def calculate
 end
 end
 calci=Calculator.new()
-calci.calculate
+result = calci.add(10,23)
+puts result

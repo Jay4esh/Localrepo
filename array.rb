@@ -5,22 +5,22 @@
 # # puts clothes[3]
 # # puts clothes.reverse()
 
-# vehicles = [ "splendor", "baleno", "jupiter"]
+# vehicles = [ "splendor", "jupiter", "baleno"]
 
-# # puts vehicles.length()
-# # puts vehicles.sort()
-# # puts vehicles.include? "BMW"
-# # puts vehicles.reverse()
+# puts vehicles.length()
+# puts vehicles.sort()
+# puts vehicles.include? "BMW"
+# puts vehicles.reverse()
 
-# # if vehicles[1] == "splendor"
-# #     puts "its bike"
-# #     elsif vehicles[1] == "baleno"
-# #         puts "Its car"
-# #     else
-# #         puts "Its sctiva"
-# #     end
-# #     puts vehicles[1..3]
-# #     puts vehicles[-2]
+# if vehicles[1] == "splendor"
+#     puts "its bike"
+#     elsif vehicles[1] == "baleno"
+#         puts "Its car"
+#     else
+#         puts "Its sctiva"
+#     end
+    # puts vehicles[0..2]
+    # puts vehicles[-2]
 #    clothes = Array.new(4)  {|num| num + 1}
    
 #    puts "clothes=#{clothes}"
@@ -74,6 +74,17 @@
 # hash.transform_values!.with_index { |key,value| puts "#{key}.#{value}"}
 # puts hash
 
-h = {1=>10, 5=>20, 7=>49}
-num1 = h.to_a
-puts num1.inspect
+# h = {1=>10, 5=>20, 7=>49}
+# num1 = h.to_a
+# puts num1.inspect
+
+hash = {"a" => 25, "b" => 30, "c" => 35}
+
+hash.store('d', 40)
+
+hash.reject!{ |key,value| value == 25 }
+hash.transform_values! { |value| value*value }
+hash.transform_values.with_index { |key,value| puts "#{key} == #{value}" }
+obj1 = hash.to_a
+puts obj1.inspect
+puts hash.has_key? ('b')

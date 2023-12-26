@@ -58,3 +58,4 @@ end
 
 curious=Jayesh.new()
 curious.open
+

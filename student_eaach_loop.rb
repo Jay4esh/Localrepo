@@ -24,15 +24,15 @@
 # end
 # puts friends.sort
 
-# hash = {"a"=>10, "b"=>20, "cv"=>30}
-# hash.each do |key,value|
-#      puts "#{key} == #{value} "
-# end
-
-
-arr = [1,2,3,4,5,6]
-arr.map! do |value|
-     value+1
+hash = {"a"=>10, "b"=>20, "cv"=>30}
+hash.each do |key,value|
+     puts "#{key} == #{value} "
 end
-puts arr
+
+
+# arr = [1,2,3,4,5,6]
+# arr.map do |value|
+#      value+1
+# end
+# puts arr
 
