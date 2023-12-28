@@ -1,4 +1,4 @@
-module Jay
+module Calculate
     def add(x,y)
         x + y 
     end
@@ -17,8 +17,8 @@ module Jay
 end
 end
 
-class Jayesh
-include Jay
+class Calculation
+include Calculate
 def open 
     while true
     puts "1 Addition"
@@ -56,6 +56,6 @@ end
 
 
 
-curious=Jayesh.new()
+curious=Calculation.new()
 curious.open
 

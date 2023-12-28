@@ -27,5 +27,5 @@ y=box.getWidth()
     puts "\n..........methods program........"
 
     require_relative "methods.rb"
-include Panga
+include Person
 Panga.sayhii("Jay")

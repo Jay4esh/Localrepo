@@ -70,17 +70,17 @@
 #     end
 # paat(5,1)
 
-def dig_tri(rows)
-    current_number = 4
-    for i in 1..rows
-        for j in 1..i 
-            print "#{current_number} "
-            current_number += 1
-        end
-        puts
-    end
-end 
-dig_tri(4) 
+# def dig_tri(rows)
+#     current_number = 4
+#     for i in 1..rows
+#         for j in 1..i 
+#             print "#{current_number} "
+#             current_number += 1
+#         end
+#         puts
+#     end
+# end 
+# dig_tri(4) 
 # def pattern(rows)
 #     j = 1
 #     for i in 1..rows
@@ -121,5 +121,18 @@ dig_tri(4)
 #     exit
 # end
 
-
+def pattern(n)
+    current_number = 1
+    for i in (1..n) 
+        for j in (1..i)
+            print "#{current_number} "
+            print "* " if (i > 1 && i > j)
+            current_number += 1  
+        end
+        puts 
+    end
+end
+puts "enter rows"
+var1 = gets.chomp().to_i
+pattern(var1)
 

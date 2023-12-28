@@ -1,9 +1,9 @@
-# # clothes  = Array["shirt", "t-shirt", "top", "hood"]
-# # puts clothes.sort()
-# # puts clothes.length()
-# # clothes[3] = "Coat"
-# # puts clothes[3]
-# # puts clothes.reverse()
+# clothes  = Array["shirt", "t-shirt", "top", "hood"]
+# puts clothes.sort()
+# puts clothes.length()
+# clothes[3] = "Coat"
+# puts clothes[3]
+# puts clothes.reverse()
 
 # vehicles = [ "splendor", "jupiter", "baleno"]
 
@@ -46,37 +46,27 @@
 # arr.unshift(0)
 # puts arr
 # puts
-# puts
-# puts
-# puts
-
 # arr.pop 
 # arr.push(3)
 # puts arr
-# puts 
-# puts 
-# puts 
 
 # arr.uniq!
 # puts arr
 # puts 
-# puts 
-# puts 
-# puts 
 
-# hash = {"a"=>1, "b"=>2, "c"=>3, "d"=>4}
-# hash.store('e', 5)
-# puts hash["b"]
-# puts hash.has_key?("b")
-# hash.reject! {|key,value| value < 3.5}
-# puts hash
-# hash.transform_values! {|v| v*v }
-# hash.transform_values!.with_index { |key,value| puts "#{key}.#{value}"}
-# puts hash
+hash = {"a"=>1, "b"=>2, "c"=>3, "d"=>4}
+hash.store('e', 5)
+puts hash["b"]
+puts hash.has_key?("b")
+hash.reject! {|key,value| value < 3.5}
+puts hash
+hash.transform_values! {|v| v*v }
+hash.transform_values!.with_index { |key,value| puts "#{key}.#{value}"}
+puts hash
 
-# h = {1=>10, 5=>20, 7=>49}
-# num1 = h.to_a
-# puts num1.inspect
+h = {1=>10, 5=>20, 7=>49}
+num1 = h.to_a
+puts num1.inspect
 
 hash = {"a" => 25, "b" => 30, "c" => 35}
 

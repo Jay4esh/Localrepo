@@ -1,18 +1,18 @@
 # Ruby program to create an array using literal constructor '[]'
-pizza = ["Margerita", "chessy 7", "burn to hell", 1, 556]
+arr = ["Margerita", "chessy 7", "burn to hell", 1, 556]
 i = 0
 while (i<6)
-    puts pizza[i]
+    puts arr[i]
     i += 1
 end
 puts "\n....other program....."
 
 # Ruby program to create an array using Array class
-toys = Array("a".."j")
+alphabets = Array("a".."j")
 puts "Array elements :"
 i = 0   
 while(i<=2)
-puts toys[i]
+puts alphabets[i]
 i=i+1
 end
 

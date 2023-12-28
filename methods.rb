@@ -25,7 +25,7 @@ end
 
 
 puts "\n..........methods program........"
-module Panga
+module Person
 def sayhii(name)
     puts "hii #{name}"
 end
@@ -34,5 +34,5 @@ def saybye(name)
 end
 end
 
-include Panga
+include Person
 Panga.sayhii("Jay")
