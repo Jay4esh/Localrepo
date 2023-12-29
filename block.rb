@@ -65,12 +65,12 @@ end
 # end
 # puts lambda_demo_proc
 
-# def block_demo_lambda
-#     block_demo = lambda {return "complete it"}
-#     block_demo.call
-#     "WHY"
-#     end
-#     puts block_demo_lambda
+def block_demo_lambda
+    block_demo = lambda {return "complete it"}
+    block_demo.call
+    "WHY"
+    end
+    puts block_demo_lambda
 
 
 # def block()

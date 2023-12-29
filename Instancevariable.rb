@@ -4,18 +4,15 @@ class Animal
     def self.count()
         @count
     end
-    def self.count= (value)
-        @count = value
+    def self.count= (n)
+        @count = n
     end
     def initialize()
         self.class.count += 1
     end
 end
-class Cat
+class Cat < Animal
     @count = 0
 end
-Animal.new
-Animal.new
 Cat.new
-print Animal.count
-print Cat.count
+puts Cat.count

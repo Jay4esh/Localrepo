@@ -51,7 +51,7 @@
 #             (1..31).include?(day)
 #         when 4,6,9,11
 #             (1..30).include?(day)
-#         when 2
+# #         when 2
 #             Date.leap?(year) ? (1..29).include?(day) : (1..28).include?(day)
 #         else
 #             false

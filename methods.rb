@@ -26,13 +26,13 @@ end
 
 puts "\n..........methods program........"
 module Person
-def sayhii(name)
+def prompt(name)
     puts "hii #{name}"
 end
-def saybye(name)
+def cruise(name)
     puts "bye #{name}"
 end
 end
 
 include Person
-Panga.sayhii("Jay")
+Person.prompt("Jay")

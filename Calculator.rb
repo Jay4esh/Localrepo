@@ -25,9 +25,14 @@ def calculate
     puts "2. sub"
     puts "3. mul"
     puts "4. div"
+    puts "5. exit"
 
-    puts "enter choice: ('+', '-', '*', '/')"
+    puts "enter choice: ('1', '2', '3', '4', '5')"
     choice = gets.chomp()
+    if choice == '5'
+    puts "Exit the bar"
+    exit
+    end
     
 
     puts "enter number"
@@ -36,25 +41,24 @@ def calculate
     num2 = gets.chomp().to_f
 
     case 
-    when choice == '+'
+    when choice == '1'
         add(num1,num2)
         puts (num1 + num2)
       
-    when choice == '-'
+    when choice == '2'
         sub(num1,num2)
         puts (num1 - num2)
 
-    when choice == '*'
+    when choice == '3'
         mul(num1,num2)
         puts (num1 * num2)
-    when choice == '/'
+    when choice == '4'
         div(num1,num2)
     else
-        puts "invalid choice"
-        return
+      puts "Invalid choice"
     end
 end
 end
 calci=Calculator.new()
-result = calci.add(10,23)
+result = calci.calculate
 puts result

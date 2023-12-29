@@ -1,9 +1,9 @@
-# clothes  = Array["shirt", "t-shirt", "top", "hood"]
-# puts clothes.sort()
-# puts clothes.length()
-# clothes[3] = "Coat"
-# puts clothes[3]
-# puts clothes.reverse()
+clothes  = Array["shirt", "t-shirt", "top", "hood"]
+puts clothes.sort()
+puts clothes.length()
+clothes[3] = "Coat"
+puts clothes[3]
+puts clothes.reverse()
 
 # vehicles = [ "splendor", "jupiter", "baleno"]
 
@@ -25,56 +25,88 @@
    
 #    puts "clothes=#{clothes}"
 
-# arr = [1,2,3,4,5,6,7,8,9,10]
-# arr.collect! do |value|
-#    if value > 5
+arr = [1,2,3,4,5,6,7,8,9,10]
+arr.collect! do |value|
+   if value > 5
    
-#     puts value
-#    end
+    puts value
+   end
 
-# end
+end
 
-# arr = [1,2,3,4,5,6,7,8,9,10]
-# arr.select! do |value|
-#    if value%2 != 0
-#       puts value
-#    end
-# end
+arr = [1,2,3,4,5,6,7,8,9,10]
+arr.select! do |value|
+   if value%2 != 0
+      puts value
+   end
+end
 
-# arr = [1,2,3,4,5,6,7,8,9,10]
-# arr.push(11)
-# arr.unshift(0)
-# puts arr
-# puts
-# arr.pop 
-# arr.push(3)
-# puts arr
+arr = [1,2,3,4,5,6,7,8,9,10]
+arr.push(11)
+arr.unshift(0)
+puts arr
+puts
+arr.pop 
+arr.push(3)
+puts arr
 
-# arr.uniq!
+arr.uniq!
 # puts arr
 # puts 
 
-hash = {"a"=>1, "b"=>2, "c"=>3, "d"=>4}
-hash.store('e', 5)
-puts hash["b"]
-puts hash.has_key?("b")
-hash.reject! {|key,value| value < 3.5}
-puts hash
-hash.transform_values! {|v| v*v }
-hash.transform_values!.with_index { |key,value| puts "#{key}.#{value}"}
-puts hash
+# Ruby program to create an array using literal constructor '[]'
+arr = ["Margerita", "chessy 7", "burn to hell", 1, 556]
+i = 0
+while (i<6)
+    puts arr[i]
+    i += 1
+end
+puts "\n....other program....."
 
-h = {1=>10, 5=>20, 7=>49}
-num1 = h.to_a
-puts num1.inspect
+# Ruby program to create an array using Array class
+alphabets = Array("a".."j")
+puts "Array elements :"
+i = 0   
+while(i<=2)
+puts alphabets[i]
+i=i+1
+end
 
-hash = {"a" => 25, "b" => 30, "c" => 35}
 
-hash.store('d', 40)
+puts "\n....other program....."
 
-hash.reject!{ |key,value| value == 25 }
-hash.transform_values! { |value| value*value }
-hash.transform_values.with_index { |key,value| puts "#{key} == #{value}" }
-obj1 = hash.to_a
-puts obj1.inspect
-puts hash.has_key? ('b')
+# Ruby program to create an array using the new() class method
+arr = Array.new()
+arr[0] = "Jayesh"
+arr[1] = "Y"
+puts "this array consists of :"
+i=0
+while(i<2)
+    puts arr[i]
+    i += 1
+end
+
+puts "\n....length and size program....."
+
+# Ruby program to get the length and size of an array using the length() method
+puts arr.length
+puts arr.size
+
+puts "\n....apppend program....."
+# Ruby program to append an element into an array
+arr.append("Virat")
+puts arr
+
+# Ruby program to convert an array into a string and join elements with a specified character
+birds = [1, 10,20,30]
+str = birds.join('**')
+str = birds.to_s
+puts str, birds.to_s
+
+# Ruby program to add multiple elements to the end of the array using push() methodputs "
+
+puts "\n....push method program....."
+name = ["Jay", "joy", "x"]
+name.push("y","z")
+puts name,"\n"
+
